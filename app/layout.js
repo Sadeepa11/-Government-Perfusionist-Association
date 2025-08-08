@@ -59,12 +59,11 @@ export const metadata = {
     creator: "@PerfusionLanka", // If you have a Twitter handle
     images: ["/images/logo/logo.jpeg"], // Ensure this path is correct
   },
- icons: {
-  icon: "/images/logo/logo.jpeg",
-  shortcut: "/images/logo/logo.jpeg",
-  apple: "/images/logo/logo.jpeg",
-},
-
+  icons: {
+    icon: "/public/images/logo//logo.jpeg",
+    shortcut: "/public/images/logo//logo.jpeg",
+    apple: "/public/images/logo//logo.jpeg",
+  },
   robots: {
     index: true,
     follow: true,
