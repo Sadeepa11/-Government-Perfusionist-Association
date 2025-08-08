@@ -149,7 +149,7 @@ const Footer = () => {
                   </div>
                   <div>
                     <h5 className="font-semibold group-hover:text-cyan-400 transition-colors duration-300">Email</h5>
-                    <p className="text-sm">perfusionsl.lk@gmail.com</p>
+                    <p className="text-sm">governmentperfusionists@gmail.com</p>
                   </div>
                 </div>
               </div>
@@ -164,19 +164,7 @@ const Footer = () => {
               © {new Date().getFullYear()} Government Perfusionist Association. All rights reserved.
             </div>
             <div className="flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-6">
-              {/* Developer Credit */}
-              <div className="flex items-center space-x-2 text-xs text-slate-500">
-                <span>Developed by</span>
-                <a 
-                  href="https://modulaverssystems.com" 
-                  className="group flex items-center decoration-0 space-x-2 hover:text-cyan-400 transition-colors duration-300"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Modulavers Systems
-                 
-                </a>
-              </div>
+             
               {/* Legal Links */}
               <div className="flex space-x-6 text-sm">
                 <a href="#" className="text-slate-400 hover:text-cyan-400 transition-colors duration-300">
