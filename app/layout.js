@@ -60,9 +60,9 @@ export const metadata = {
     images: ["/images/og-image.jpg"],
   },
   icons: {
-    icon: "/favicon.ico",
-    shortcut: "/favicon.ico",
-    apple: "/apple-touch-icon.png",
+    icon: "/public/images/logo//logo.jpeg",
+    shortcut: "/public/images/logo//logo.jpeg",
+    apple: "/public/images/logo//logo.jpeg",
   },
   robots: {
     index: true,
