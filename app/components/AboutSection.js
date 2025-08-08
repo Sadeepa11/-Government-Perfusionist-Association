@@ -96,17 +96,16 @@ export default function AboutSection() {
           <div className={`relative transition-all duration-1000 delay-300 ${
             isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'
           }`}>
-            <div className="relative group">
-              <div className="absolute -inset-2 sm:-inset-4 bg-gradient-to-r from-sky-400 to-blue-500 rounded-2xl opacity-20 blur-xl group-hover:opacity-30 transition-opacity duration-500"></div>
-              <div className="relative bg-white p-2 sm:p-4 rounded-2xl shadow-2xl">
-                <div className="w-full h-64 sm:h-80 md:h-96 bg-gradient-to-br from-sky-100 to-blue-100 rounded-xl flex items-center justify-center transition-transform duration-700 group-hover:scale-[1.02]">
-                  <div className="text-center p-4">
-                    <div className="text-4xl sm:text-6xl mb-2">🫀</div>
-                    <p className="text-sky-700 font-semibold text-sm sm:text-base">Perfusion Society Logo</p>
-                    <p className="text-gray-600 text-xs sm:text-sm mt-1">Government Perfusionist Association</p>
-                  </div>
-                </div>
-                <div className="absolute inset-2 sm:inset-4 rounded-xl bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+             <div className="relative group">
+              <div className="absolute -inset-4 bg-gradient-to-r from-sky-400 to-blue-500 rounded-2xl opacity-20 blur-xl group-hover:opacity-30 transition-opacity duration-500"></div>
+              <div className="relative bg-white p-4 rounded-2xl shadow-2xl">
+                <img
+                  src="/images/logo/logo.jpeg"
+                
+                  alt="Government Perfusionist Association Team"
+                  className="w-full  object-cover rounded-xl transition-transform duration-700 group-hover:scale-[1.02]"
+                />
+                <div className="absolute inset-4 rounded-xl bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               </div>
             </div>
 
