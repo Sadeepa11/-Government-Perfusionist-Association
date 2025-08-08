@@ -42,7 +42,7 @@ export const metadata = {
     siteName: "Perfusion Lanka",
     images: [
       {
-        url: "/images/og-image.jpg", // Make sure this exists in /public/images/
+        url: "/images/logo/logo.jpeg", // Make sure this exists in /public/images/
         width: 1200,
         height: 630,
         alt: "Perfusion Lanka - Team and Services",
@@ -57,13 +57,14 @@ export const metadata = {
     description:
       "Trusted perfusion experts in Sri Lanka. Cardiopulmonary bypass, ECMO, ICU support, and more.",
     creator: "@PerfusionLanka", // If you have a Twitter handle
-    images: ["/images/og-image.jpg"],
+    images: ["/images/logo/logo.jpeg"], // Ensure this path is correct
   },
-  icons: {
-    icon: "/public/images/logo//logo.jpeg",
-    shortcut: "/public/images/logo//logo.jpeg",
-    apple: "/public/images/logo//logo.jpeg",
-  },
+ icons: {
+  icon: "/images/logo/logo.jpeg",
+  shortcut: "/images/logo/logo.jpeg",
+  apple: "/images/logo/logo.jpeg",
+},
+
   robots: {
     index: true,
     follow: true,
