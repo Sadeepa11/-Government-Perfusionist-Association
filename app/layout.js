@@ -14,7 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Government Perfusionist Association| Sri Lanka",
+  // title: "Government Perfusionist Association| Sri Lanka",
+  title: "Perfusion Lanka | Home",
   description:
     "Perfusion Lanka delivers expert cardiac perfusion services including Cardiopulmonary Bypass, ECMO, Blood Management, and ICU support throughout Sri Lanka.",
   keywords: [
