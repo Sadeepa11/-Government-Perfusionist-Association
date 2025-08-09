@@ -6,6 +6,7 @@ import ServicesSection from './components/ServicesSection'
 import Footer from './components/Footer'
 import Gallery from './Gallery'
 import PerfusionistRole from './components/Glance'
+import NewsEventsSection from './components/News'
 
 export default function Home() {
   return (
@@ -15,13 +16,14 @@ export default function Home() {
         <meta name="description" content="Sri Lankan Perfusion Services Website" />
       </Head>
 
-   
+
       <Hero />
       <AboutSection />
-      <ServicesSection/>
-     <PerfusionistRole/>
-      <Gallery/>
-      <Footer/>
+      <ServicesSection />
+      <NewsEventsSection />
+      <PerfusionistRole />
+      <Gallery />
+      <Footer />
 
     </>
   )

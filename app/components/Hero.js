@@ -4,120 +4,69 @@ import { Heart, Activity, Users, Award, ChevronRight, Play } from 'lucide-react'
 
 export default function Hero() {
   return (
-    <section id='home' className="relative min-h-screen overflow-hidden bg-gradient-to-br from-slate-50 to-blue-50">
-      {/* Background with image and overlay */}
+    <section className="relative h-screen overflow-hidden">
+      {/* Background with gradient overlay */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ 
-          backgroundImage: `url('/images/gallery/img5.jpeg')`,
+          backgroundImage: `linear-gradient(135deg, rgba(14, 165, 233, 0.8) 0%, rgba(59, 130, 246, 0.9) 50%, rgba(16, 185, 129, 0.8) 100%), url('https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=1920&h=1080&fit=crop&q=80')`
         }}
       />
       
-      {/* Clean overlay for better text readability */}
-      <div className="absolute inset-0 bg-gradient-to-br from-white/85 via-white/75 to-blue-50/80 backdrop-blur-[1px]"></div>
-      
-      {/* Subtle animated background elements */}
+      {/* Animated background elements */}
       <div className="absolute inset-0">
-        <div className="absolute top-20 left-10 w-2 h-2 bg-blue-300/40 rounded-full animate-pulse"></div>
-        <div className="absolute top-40 right-20 w-3 h-3 bg-red-300/30 rounded-full animate-ping"></div>
-        <div className="absolute bottom-32 left-20 w-1 h-1 bg-blue-400/50 rounded-full animate-pulse"></div>
-        <div className="absolute bottom-60 right-32 w-2 h-2 bg-red-300/35 rounded-full animate-ping"></div>
-        <div className="absolute top-60 left-1/4 w-1 h-1 bg-blue-300/40 rounded-full animate-pulse"></div>
-        <div className="absolute top-80 right-1/3 w-2 h-2 bg-red-300/30 rounded-full animate-ping"></div>
+        <div className="absolute top-20 left-10 w-2 h-2 bg-white/30 rounded-full animate-pulse"></div>
+        <div className="absolute top-40 right-20 w-3 h-3 bg-white/20 rounded-full animate-ping"></div>
+        <div className="absolute bottom-32 left-20 w-1 h-1 bg-white/40 rounded-full animate-pulse"></div>
+        <div className="absolute bottom-60 right-32 w-2 h-2 bg-white/25 rounded-full animate-ping"></div>
       </div>
 
       {/* Main content */}
-      <div className="relative min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8">
-        <div className="max-w-6xl mx-auto text-center py-20">
+      <div className="relative h-full flex items-center justify-center">
+        <div className="max-w-6xl mx-auto px-6 text-center text-white">
           
-          {/* Logo/Badge with clean styling */}
+          {/* Logo/Badge */}
           <div className="mb-8 flex justify-center">
-            <div className="bg-white rounded-full p-6 shadow-xl border border-gray-100">
-              <Heart className="w-12 h-12 text-red-500" fill="currentColor" />
+            <div className="bg-white/10 backdrop-blur-sm rounded-full p-6 border border-white/20">
+              <Heart className="w-12 h-12 text-red-300" fill="currentColor" />
             </div>
           </div>
 
-          {/* Main heading with clear contrast */}
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
-            <span className="block text-gray-900 mb-2">
+          {/* Main heading */}
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
+            <span className="block bg-gradient-to-r from-white via-blue-100 to-emerald-100 bg-clip-text text-transparent">
               Pioneering Perfusion Excellence
             </span>
-            <span className="block bg-gradient-to-r from-red-600 to-blue-600 bg-clip-text text-transparent text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium">
+            <span className="block text-white/90 text-3xl md:text-4xl lg:text-5xl font-medium mt-2">
               in Sri Lanka
             </span>
           </h1>
 
-          {/* Subtitle with excellent readability */}
-          <p className="text-xl sm:text-2xl lg:text-3xl mb-8 text-gray-700 font-light max-w-4xl mx-auto">
+          {/* Subtitle */}
+          <p className="text-xl md:text-2xl lg:text-3xl mb-6 text-white/90 font-light max-w-4xl mx-auto">
             Advancing cardiovascular care through knowledge, innovation, and unity
           </p>
 
           {/* Mission Statement */}
-          <p className="text-lg sm:text-xl mb-8 text-gray-600 max-w-4xl mx-auto leading-relaxed">
+          <p className="text-lg md:text-xl mb-8 text-white/85 max-w-4xl mx-auto leading-relaxed">
             Dedicated to elevating patient outcomes and empowering perfusion professionals nationwide
           </p>
 
-          {/* Tagline with clear accent */}
-          <div className="mb-12">
-            <p className="text-base sm:text-lg text-gray-700 max-w-2xl mx-auto font-medium">
-              <span className="text-red-600 text-2xl">"</span>
-              <span className="italic">Precision in circulation, commitment to life</span>
-              <span className="text-blue-600 text-2xl">"</span>
-            </p>
-          </div>
-
-          {/* Call-to-action buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-            <button className="group relative px-8 py-4 bg-gradient-to-r from-red-600 to-blue-600 text-white font-semibold rounded-xl hover:from-red-700 hover:to-blue-700 transition-all duration-300 hover:shadow-xl transform hover:-translate-y-1 w-full sm:w-auto">
-              <span className="relative z-10 flex items-center justify-center">
-                Learn More About Us
-                <ChevronRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
-              </span>
-            </button>
-            
-            <button className="group px-8 py-4 bg-white text-gray-800 font-semibold rounded-xl border-2 border-gray-200 hover:border-gray-300 hover:bg-gray-50 transition-all duration-300 hover:shadow-lg transform hover:-translate-y-1 w-full sm:w-auto">
-              <span className="flex items-center justify-center">
-                <Play className="mr-2 w-5 h-5 group-hover:scale-110 transition-transform" />
-                Watch Our Story
-              </span>
-            </button>
-          </div>
-
-          {/* Key highlights */}
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-4xl mx-auto">
-            <div className="bg-white/80 backdrop-blur-sm rounded-xl p-6 shadow-lg border border-white/50">
-              <Activity className="w-8 h-8 text-red-500 mx-auto mb-3" />
-              <h3 className="font-bold text-gray-900 mb-2">Expert Care</h3>
-              <p className="text-gray-600 text-sm">Leading perfusion professionals</p>
-            </div>
-            
-            <div className="bg-white/80 backdrop-blur-sm rounded-xl p-6 shadow-lg border border-white/50">
-              <Users className="w-8 h-8 text-blue-500 mx-auto mb-3" />
-              <h3 className="font-bold text-gray-900 mb-2">Community</h3>
-              <p className="text-gray-600 text-sm">United for better outcomes</p>
-            </div>
-            
-            <div className="bg-white/80 backdrop-blur-sm rounded-xl p-6 shadow-lg border border-white/50">
-              <Award className="w-8 h-8 text-green-500 mx-auto mb-3" />
-              <h3 className="font-bold text-gray-900 mb-2">Excellence</h3>
-              <p className="text-gray-600 text-sm">Committed to highest standards</p>
-            </div>
-          </div>
+          {/* Tagline */}
+          <p className="text-base md:text-lg mb-12 text-white/80 max-w-2xl mx-auto font-medium italic">
+            "Precision in circulation, commitment to life"
+          </p>
         </div>
       </div>
 
-      {/* Clean bottom wave */}
+
+
+      {/* Bottom decorative wave */}
       <div className="absolute bottom-0 left-0 right-0">
-        <svg viewBox="0 0 1200 120" preserveAspectRatio="none" className="w-full h-12">
-          <defs>
-            <linearGradient id="waveGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-              <stop offset="0%" style={{stopColor:'#ef4444', stopOpacity:0.1}} />
-              <stop offset="50%" style={{stopColor:'#ffffff', stopOpacity:0.3}} />
-              <stop offset="100%" style={{stopColor:'#3b82f6', stopOpacity:0.1}} />
-            </linearGradient>
-          </defs>
-          <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" fill="url(#waveGradient)" opacity="0.6"></path>
-          <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" fill="white"></path>
+        <svg viewBox="0 0 1200 120" preserveAspectRatio="none" className="w-full h-12 fill-white">
+          <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25"></path>
+          <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5"></path>
+          <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"></path>
         </svg>
       </div>
     </section>

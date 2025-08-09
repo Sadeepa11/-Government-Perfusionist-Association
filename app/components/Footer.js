@@ -73,7 +73,7 @@ const Footer = () => {
             <div className="group">
               <div className="relative">
                 <img
-                  src="/images/logo/logo.jpeg"
+                  src="/images/aboutus/team.jpg"
                   alt="Government Perfusionist Association Logo"
                   className="w-56 h-auto mx-auto lg:mx-0 transition-all duration-500 group-hover:scale-105 group-hover:brightness-110 drop-shadow-2xl"
                 />
@@ -82,9 +82,9 @@ const Footer = () => {
             </div>
             
             <div className="space-y-4">
-              <h3 className="text-2xl font-bold text-cyan-400 tracking-wide">
+              {/* <h3 className="text-2xl font-bold text-cyan-400 tracking-wide">
                 Government Perfusionist Association
-              </h3>
+              </h3> */}
               <p className="text-slate-300 text-base leading-relaxed max-w-lg mx-auto lg:mx-0">
                 Leading healthcare technology solutions with innovation and excellence in perfusion services. Committed to advancing medical care through cutting-edge perfusion technology.
               </p>

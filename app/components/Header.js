@@ -1,6 +1,5 @@
 'use client'
-import Image from 'next/image'
-import Link from 'next/link'
+
 import { useState, useEffect } from 'react'
 
 export default function Header() {
@@ -34,14 +33,14 @@ export default function Header() {
                     <div className="flex items-center space-x-3 group">
                         <div className="relative overflow-hidden rounded-full transition-transform duration-300 group-hover:scale-110">
                             <img 
-                                src="/images/logo/logo.jpeg" 
+                                src="/images/gallery/img5.jpeg" 
                                 width={40} 
                                 height={40} 
                                 alt="Perfusion Logo" 
                                 className="w-10 h-10 object-cover transition-transform duration-300 group-hover:rotate-12" 
                             />
                         </div>
-                        <div className="hidden sm:block">
+                        {/* <div className="hidden sm:block">
                             <span className="font-bold text-lg lg:text-xl text-sky-800 transition-colors duration-300 hover:text-sky-600">
                                 Government Perfusionist Association
                             </span>
@@ -49,15 +48,15 @@ export default function Header() {
                         </div>
                         <div className="sm:hidden">
                             <span className="font-bold text-lg text-sky-800">GPASL</span>
-                        </div>
+                        </div> */}
                     </div>
 
                     {/* Desktop Navigation */}
                     <nav className="hidden lg:flex items-center space-x-8">
-                        {['Home', 'About', 'Services', 'Overview','Gallery', 'Contact'].map((item, index) => (
+                        {['Home', 'About Us', 'Services','News and Events', 'Overview','Gallery', 'Contact'].map((item, index) => (
                             <a
                                 key={item}
-                                href={`#${item.toLowerCase()}`}
+                                href={`#${item.toLowerCase().replace(/\s+/g, '')}`}
                                 className="relative text-gray-600 font-medium transition-all duration-300 hover:text-sky-800 group"
                                 style={{ animationDelay: `${index * 100}ms` }}
                             >
@@ -93,10 +92,10 @@ export default function Header() {
                 }`}>
                     <nav className="py-4 border-t border-gray-200">
                         <div className="flex flex-col space-y-4">
-                            {['Home', 'About', 'Services', 'Overview','Gallery', 'Contact'].map((item, index) => (
+                            {['Home', 'About Us', 'Services','News and Events', 'Overview','Gallery', 'Contact'].map((item, index) => (
                                 <a
                                     key={item}
-                                    href={`#${item.toLowerCase()}`}
+                                  href={`#${item.toLowerCase().replace(/\s+/g, '')}`}
                                     onClick={closeMenu}
                                     className={`text-gray-600 font-medium py-2 px-4 rounded-lg transition-all duration-300 hover:text-sky-800 hover:bg-sky-50 transform ${
                                         isMenuOpen ? 'translate-x-0 opacity-100' : '-translate-x-full opacity-0'
