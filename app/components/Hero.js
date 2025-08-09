@@ -4,7 +4,7 @@ import { Heart, Activity, Users, Award, ChevronRight, Play } from 'lucide-react'
 
 export default function Hero() {
   return (
-    <section className="relative h-screen overflow-hidden">
+    <section id='home' className="relative h-screen overflow-hidden">
       {/* Background with gradient overlay */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
