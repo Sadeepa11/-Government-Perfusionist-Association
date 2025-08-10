@@ -18,10 +18,10 @@ const allNewsData = [
     category: "Education",
     image: "/images/news/news1-img1.jpeg",
     images: [
+      "/images/news/news1-img1.jpeg",
       "/images/news/news1-img2.jpg",
-      "/images/news/news1-img3.webp",
-      "/images/news/news1-img4.jpg",
-      "/images/news/news1-img1.webp"
+      "/images/news/news1-img3.jpg",
+      "/images/news/news1-img4.jpg"
     ],
     content: `A landmark moment in Sri Lanka's healthcare education unfolded today at the National Hospital of Sri Lanka (NHSL), Colombo, with the official commencement of the nation's **first dedicated Perfusionist Educational Programme.** Conducted under the auspices of the Ministry of Health's **Education, Training, and Research (ET&R) Unit**, this pioneering initiative marks a significant leap forward in enhancing specialized cardiac and thoracic surgical care for the Sri Lankan people.
 
