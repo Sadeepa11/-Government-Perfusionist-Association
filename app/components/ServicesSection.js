@@ -181,10 +181,10 @@ export default function ServicesSection() {
         </div>
 
         {/* Impact Statistics */}
-        <div className={`mt-20 transition-all duration-1000 delay-800 ${
+        {/* <div className={`mt-20 transition-all duration-1000 delay-800 ${
           isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-        }`}>
-          <div className="bg-gradient-to-r from-sky-600 to-blue-600 rounded-3xl p-8 lg:p-12 text-white">
+        }`}> */}
+          {/* <div className="bg-gradient-to-r from-sky-600 to-blue-600 rounded-3xl p-8 lg:p-12 text-white">
             <div className="grid md:grid-cols-3 gap-8 text-center">
               <div className="group">
                 <div className="text-4xl lg:text-5xl font-bold mb-2 group-hover:scale-110 transition-transform duration-300">
@@ -206,9 +206,9 @@ export default function ServicesSection() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
-        Call to Action
+   
         <div className={`mt-16 text-center transition-all duration-1000 delay-1000 ${
           isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
         }`}>
