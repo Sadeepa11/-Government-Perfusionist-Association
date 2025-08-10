@@ -136,7 +136,7 @@ const Footer = () => {
                   </div>
                   <div>
                     <h5 className="font-semibold group-hover:text-cyan-400 transition-colors duration-300">Phone</h5>
-                    <p className="text-sm">+94 (72) 680 1812</p>
+                    <p className="text-sm">(+94) 77 807 8781 / (+94) 72 384 9025 / (+94) 71 384 9025</p>
                   </div>
                 </div>
               </div>
