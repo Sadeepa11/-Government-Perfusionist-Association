@@ -16,7 +16,7 @@ const allNewsData = [
     date: "August 11, 2025",
     author: "Ministry of Health ET&R Unit",
     category: "Education",
-    image: "/images/news/news1-img1.webp",
+    image: "/images/news/news1-img1.jpeg",
     images: [
       "/images/news/news1-img2.jpg",
       "/images/news/news1-img3.webp",

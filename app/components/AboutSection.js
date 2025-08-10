@@ -100,7 +100,7 @@ export default function AboutSection() {
               <div className="absolute -inset-4 bg-gradient-to-r from-sky-400 to-blue-500 rounded-2xl opacity-20 blur-xl group-hover:opacity-30 transition-opacity duration-500"></div>
               <div className="relative bg-white p-4 rounded-2xl shadow-2xl">
                 <img
-                  src="/images/aboutus/team.jpg"
+                  src="/images/aboutus/team.jpeg"
                 
                   alt="Government Perfusionist Association Team"
                   className="w-full  object-cover rounded-xl transition-transform duration-700 group-hover:scale-[1.02]"

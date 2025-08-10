@@ -73,7 +73,7 @@ const Footer = () => {
             <div className="group">
               <div className="relative">
                 <img
-                  src="/images/aboutus/team.jpg"
+                  src="/images/footer/footer.jpeg"
                   alt="Government Perfusionist Association Logo"
                   className="w-56 h-auto mx-auto lg:mx-0 transition-all duration-500 group-hover:scale-105 group-hover:brightness-110 drop-shadow-2xl"
                 />

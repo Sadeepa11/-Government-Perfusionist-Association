@@ -9,8 +9,11 @@ export default function Hero() {
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ 
-          backgroundImage: `linear-gradient(135deg, rgba(14, 165, 233, 0.8) 0%, rgba(59, 130, 246, 0.9) 50%, rgba(16, 185, 129, 0.8) 100%), url('https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=1920&h=1080&fit=crop&q=80')`
-        }}
+  backgroundImage: `linear-gradient(135deg, rgba(14, 165, 233, 0.3) 0%, rgba(59, 130, 246, 0.4) 50%, rgba(16, 185, 129, 0.3) 100%), url('/images/bg/heroBackGround.jpeg')`,
+  backgroundSize: "cover",
+  backgroundPosition: "center"
+}}
+
       />
       
       {/* Animated background elements */}
